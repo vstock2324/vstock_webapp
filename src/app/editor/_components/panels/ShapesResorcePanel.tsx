@@ -124,7 +124,7 @@ export const ShapesResourcePanel = observer(() => {
        {SHAPES_OPTIONS.map((shape)=>{
         return (<><button
           key={nanoid()}
-          onClick={() => {shape.action(store);}} className='p-2'><shape.icon size={24}/></button></>)
+          onClick={() => {shape.action(store);}} className='p-2 cursor-pointer'><shape.icon size={24}/></button></>)
        })}
       </div>
     </div>

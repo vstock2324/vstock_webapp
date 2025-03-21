@@ -24,10 +24,10 @@ export const Flip = observer(() => {
                 onClick={handleFlipHorizontal}
                 className={`cursor-pointer`}
               >
-                <LuFlipHorizontal2 size={24} />
+                <LuFlipHorizontal2 fill='white' size={24} />
               </button>
               <button onClick={handleFlipVertical} className={`cursor-pointer`}>
-                <LuFlipVertical2 size={24} />
+                <LuFlipVertical2 fill='white' size={24} />
               </button>
             </div>
           </AccordionContent>

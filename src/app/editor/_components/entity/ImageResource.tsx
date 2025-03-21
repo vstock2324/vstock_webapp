@@ -59,17 +59,17 @@ return (<><div className="rounded-lg  overflow-hidden items-center bg-slate-800 
     <div className=" bg-transparent text-white py-1 absolute text-sm bottom-2 left-2">
       {resolution.w}x{resolution.h}
     </div>
-    <button className="hover:bg-[#00a0f5] bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg top-2 left-2">
+    <button className="hover:bg-[#00a0f5] cursor-pointer bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg top-2 left-2">
       <IoIosPricetag size={20} />
     </button>
     <button
-      className="hover:bg-[#00a0f5] bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg top-2 right-2"
+      className="hover:bg-[#00a0f5] cursor-pointer bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg top-2 right-2"
       onClick={handleDeleteImage}
     >
       <MdDelete size={20} />
     </button>
     <button
-      className="hover:bg-[#00a0f5]  bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
+      className="hover:bg-[#00a0f5] cursor-pointer  bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
       onClick={handleAddImage}
     >
       <MdAdd size={20} />

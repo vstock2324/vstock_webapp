@@ -26,7 +26,7 @@ export const CanvasFooter = observer(() => {
       <div className="flex flex-row items-center justify-end px-1">
         <div className="flex flex-row items-center justify-center m-0.5 gap-x-2">
           <button onClick={handleCanvasDecrement}>
-            <FaMinus size={18} />
+            <FaMinus fill='white' size={18} />
           </button>
           <div className="inline-flex flex-col gap-y-1 outline-none appearance-none focus:outline-none border-b m-0.5 p-0.5 items-center justify-between">
             <h5 className="text-gray-100 text-[10px] text-start w-full m-0.5 px-1 font-geistsans">
@@ -49,7 +49,7 @@ export const CanvasFooter = observer(() => {
             </select>
           </div>
           <button onClick={handleCanvasIncrement}>
-            <FaPlus size={18} />
+            <FaPlus fill='white' size={18} />
           </button>
         </div>
       </div>

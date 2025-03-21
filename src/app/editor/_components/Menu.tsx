@@ -34,12 +34,13 @@ export const Menu = observer(() => {
                 ? (store.selectedMenuOption = null)
                 : option.action(store);
             }}
-            className=" hover:brightness-200 bg-transparent px-[1px]  justify-between items-center flex-col inline-flex "
+            className=" hover:brightness-200 bg-transparent px-[1px] cursor-pointer  justify-between items-center flex-col inline-flex "
           >
             <span className=" inline-flex flex-col justify-center items-center">
               <option.icon
                 className=""
                 size={24}
+                fill="white"
                 color={`${
                   store.selectedMenuOption === option.name
                 } ? "#00a0f5" : "black" `}

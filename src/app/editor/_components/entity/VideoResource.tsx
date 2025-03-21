@@ -27,11 +27,11 @@ export const VideoResource = observer(
         <div className="bg-transparent text-white py-1 absolute  text-sm bottom-2 left-2">
           {formatedVideoLength}
           </div>
-           <button className="hover:bg-[#00a0f5]  rounded z-10 text-white font-bold py-1 absolute text-lg top-2 right-2  bg-transparent">
+           <button className="hover:bg-[#00a0f5] cursor-pointer  rounded z-10 text-white font-bold py-1 absolute text-lg top-2 right-2  bg-transparent">
             <IoIosPricetag size={20}/>
           </button>
         <button
-          className="hover:bg-[#00a0f5] bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
+          className="hover:bg-[#00a0f5] cursor-pointer bg-transparent rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
           onClick={() => {store.addVideo(store.canvas,data.publicUrl)}}>
           <MdAdd size={20} />
         </button>

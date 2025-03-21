@@ -276,7 +276,7 @@ export class Store{
         const ellipse=new fabric.Ellipse({ 
           rx:60,
           ry:30,
-          fill:"red",
+          fill:"lightgreen",
           left: 100, top: 100,
           includeDefaultValues: true,
          })
@@ -287,7 +287,7 @@ export class Store{
         this.canvas=canvas;
         if(!this.canvas) return;
         const line= new fabric.Line([100,50,200,250],{
-          stroke:"blue",
+          stroke:"white",
           strokeWidth:3,
           includeDefaultValues: true,
         })
@@ -303,7 +303,7 @@ export class Store{
           { x: 250, y: 180}, 
           { x: 150, y: 180}, 
           { x: 150, y: 50 }], { 
-              fill: 'red' ,
+              fill: 'pink' ,
               includeDefaultValues: true,
           });
           this.canvas.add(pentagon); 
@@ -329,7 +329,7 @@ export class Store{
           }, { 
               x: 200, 
               y: 10 }], { 
-              stroke: 'green',  
+              stroke: 'yellow',  
               strokeWidth: 2,  
               
               includeDefaultValues: true,
@@ -342,7 +342,7 @@ export class Store{
         this.canvas=canvas;
         if(!this.canvas) return;
         const square = new fabric.Rect({
-          top: 100, left: 100, width: 125, height: 125, fill: 'blue', 
+          top: 100, left: 100, width: 125, height: 125, fill: 'magenta', 
           includeDefaultValues: true,
         });
         square._controlsVisibility = {
@@ -362,7 +362,7 @@ export class Store{
         this.canvas=canvas;
         if(!this.canvas) return;
         const rect = new fabric.Rect({
-          top: 100, left: 100, width: 120, height: 60, fill: 'green',
+          top: 100, left: 100, width: 120, height: 60, fill: 'skyblue',
           includeDefaultValues: true, });
         this.canvas.add(rect);
     
@@ -372,7 +372,7 @@ export class Store{
         this.canvas=canvas;
         if(!this.canvas) return;
         const triangle = new fabric.Triangle({
-          width: 60, height: 90, fill: 'blue', left: 50, top: 50,
+          width: 60, height: 90, fill: 'maroon', left: 50, top: 50,
           includeDefaultValues: true,
         });
         this.canvas.add(triangle);
@@ -414,7 +414,8 @@ export class Store{
            { x: -90, y: 37.282 },
         ],
         {
-           stroke: "white",
+           
+           fill:"yellow",
            left: 110,
            top: 10,
            strokeWidth: 1,

@@ -169,42 +169,42 @@ export const MainPart = observer(() => {
       <div className="justify-between items-center flex-row py-2 flex w-full">
         <div className="inline-flex flex-row px-5  items-center  justify-start w-full">
           <button className="w-10 h-10">
-            <MdSave onClick={()=>console.log(store.canvas?.toJSON())} size={24} className="cursor-pointer" />
+            <MdSave fill="white" onClick={()=>console.log(store.canvas?.toJSON())} size={24} className="cursor-pointer" />
           </button>
           <button className="w-10 h-10">
-            <MdFileDownload onClick={()=>store.canvas?.loadFromJSON(data)}  size={24} className="cursor-pointer" />
+            <MdFileDownload fill="white" onClick={()=>store.canvas?.loadFromJSON(data)}  size={24} className="cursor-pointer" />
           </button>
           <button onClick={handleCutObject} className="w-10 h-10">
-            <MdContentCut size={24} className="cursor-pointer" />
+            <MdContentCut fill="white" size={24} className="cursor-pointer" />
           </button>
           <button
             className="w-10 h-10"
             onClick={handleCopyObject}
           >
-            <MdOutlineContentCopy className=" cursor-pointer" size={24} />
+            <MdOutlineContentCopy fill="white" className=" cursor-pointer" size={24} />
           </button>
           <button className="w-10 h-10" onClick={handlePasteObject}>
-            <MdContentPaste size={24} className=" cursor-pointer" />
+            <MdContentPaste fill="white" size={24} className=" cursor-pointer" />
           </button>
           <button onClick={()=>console.log(store.canvas?.toObject())}  className="w-10 h-10">
-            <MdUndo size={24} className=" cursor-pointer" />
+            <MdUndo fill="white" size={24} className=" cursor-pointer" />
           </button>
           <button onClick={()=>console.log(store.canvas?.toJSON())} className="w-10 h-10">
-            <MdRedo size={24} className=" cursor-pointer" />
+            <MdRedo fill="white" size={24} className=" cursor-pointer" />
           </button>
           <button className="w-10 h-10">
-            <MdHistory size={24} className="cursor-pointer" />
+            <MdHistory fill="white" size={24} className="cursor-pointer" />
           </button>
         </div>
         <div className="inline-flex flex-row items-center  justify-end  w-full">
           <button onClick={()=>store.removeObject(store.canvas)} className="w-10 h-10">
-            <MdDelete size={24} className="cursor-pointer" />
+            <MdDelete fill="white" size={24} className="cursor-pointer" />
           </button>
           <button className="w-10 h-10">
-            <MdPlayArrow onClick={()=>store.sendObjectStepWiseBackward(store.canvas)} size={24} className="cursor-pointer"></MdPlayArrow>
+            <MdPlayArrow fill="white" onClick={()=>store.sendObjectStepWiseBackward(store.canvas)} size={24} className="cursor-pointer"></MdPlayArrow>
           </button>
           <button className="w-10 h-10">
-            <MdLayers onClick={()=>store.bringObjectForward(store.canvas)} size={24} className="cursor-pointer" />
+            <MdLayers fill="white" onClick={()=>store.bringObjectForward(store.canvas)} size={24} className="cursor-pointer" />
           </button>
         </div>
       </div>

@@ -27,11 +27,11 @@ export const Properties=observer(() => {
   return (<>
   <div className="flex flex-col justify-start w-[19.8%] min-w-[250px]">
     <div className="flex flex-row justify-between  bg-[#202020]">
-     <span className="px-2 font-geistsans">Canvas Properties</span>
-     <span className="flex flex-row justify-between space-x-3 px-2"><AiOutlinePlusCircle size={24}/> <AiOutlineMinusCircle size={24}/></span>
+     <span className="px-2 font-geistsans text-white">Canvas Properties</span>
+     <span className="flex flex-row justify-between space-x-3 px-2"><AiOutlinePlusCircle fill="white" size={24}/> <AiOutlineMinusCircle fill="white" size={24}/></span>
       </div>
-      <div className="py-1 w-full"/>
-      <div className="flex flex-col cursor-pointer justify-start items-center overflow-y-auto overscroll-x-none">
+      <div className="py-1 w-full bg-[#151515]"/>
+      <div className="flex flex-col cursor-pointer bg-[#151515] justify-start items-center overflow-y-auto overscroll-x-none">
         <Layers/>
         <Alignment/>
         <Arrange/>

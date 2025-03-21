@@ -13,7 +13,7 @@ export const BackCustomize = observer(() => {
       <div className="justify-start  m-1 flex flex-row items-center">
         <Button
           onClick={() => router.back()}
-          className="bg-[#CCCCCC]  text-black py-1 px-4  rounded-md font-geistsans"
+          className="bg-[#CCCCCC]  text-black py-1 px-4 cursor-pointer rounded-[5px] font-geistsans"
         >
           Back
         </Button>

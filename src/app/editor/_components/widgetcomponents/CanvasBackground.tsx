@@ -28,7 +28,7 @@ export const CanvasBackground=observer(()=>{
               <AccordionContent className='pb-1'>
               <div className='flex flex-row items-center justify-between px-3 py-2'>
         <div className='inline-flex flex-row items-center justify-start space-x-0.5 m-0.5 p-0.5'>
-        <input  type='checkbox' ref={refBgColor}  className='h-6 w-6 cursor-pointer'/>
+        <input  type='checkbox' ref={refBgColor}  className='h-4 w-4 cursor-pointer'/>
           <input type='color' disabled={disable} onChange={handleCanvasBackgroundColor} className='h-6 w-6 cursor-pointer'/>
           <label  htmlFor='Background Color' className='text-[10px]'>Background Color</label>
           </div>

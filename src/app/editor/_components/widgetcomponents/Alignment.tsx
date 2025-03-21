@@ -40,64 +40,65 @@ export const Alignment = observer(() => {
                   type="button"
                   onClick={handleAlignHorizontalLeft}
                 >
-                  <MdAlignHorizontalLeft size={24} />
+                  <MdAlignHorizontalLeft fill="white" size={24} />
                 </button>
                 <button
                   className="cursor-pointer"
                   onClick={handleAlignHorizontalCenter}
                   type="button"
                 >
-                  <MdAlignHorizontalCenter size={24} />
+                  <MdAlignHorizontalCenter fill="white" size={24} />
                 </button>
                 <button
                   className="cursor-pointer"
                   onClick={handleAlignHorizontalRight}
                   type="button"
                 >
-                  <MdAlignHorizontalRight size={24} />
+                  <MdAlignHorizontalRight fill="white" size={24} />
                 </button>
                 <button
                   className="cursor-pointer"
                   onClick={handleHorizontalDistribute}
                   type="button"
                 >
-                  <MdHorizontalDistribute size={24} />
+                  <MdHorizontalDistribute fill="white" size={24} />
                 </button>
               </div>
               <div className="m-0.5 p-0.5 inline-flex flex-row  items-center justify-start space-x-3">
                 <button
-                  className=""
+                  className="cursor-pointer"
                   onClick={handleAlignVerticalTop}
                   type="button"
                 >
                   <span>
-                    <MdAlignVerticalTop size={24} />
+                    <MdAlignVerticalTop fill="white" size={24} />
                   </span>
                 </button>
-                <button className="" type="button">
+                <button className="cursor-pointer" type="button">
                   <span>
                     <MdAlignVerticalCenter
+                    fill="white"
                       onClick={handleAlignVerticalCenter}
                       size={24}
                     />
                   </span>
                 </button>
                 <button
-                  className=""
+                className="cursor-pointer"
                   onClick={handleAlignVerticalBottom}
                   type="button"
                 >
                   <span>
-                    <MdAlignVerticalBottom size={24} />
+                    <MdAlignVerticalBottom fill="white" size={24} />
                   </span>
                 </button>
                 <button
-                  className=""
+      className="cursor-pointer"
                   onClick={handleHorizontalDistribute}
                   type="button"
                 >
                   <span>
-                    <MdVerticalDistribute size={24} />
+                    <MdVerticalDistribute fill="white" size={24} />
                   </span>
                 </button>
               </div>

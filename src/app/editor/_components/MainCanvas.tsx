@@ -123,7 +123,7 @@ useEffect(()=>{
 },[])
   return (<>
     <div className='relative flex flex-col items-center justify-center bg-black w-full border border-white'>
-    <canvas id='lower-canvas' className="absolute border border-green-400"></canvas>
+    <canvas id='lower-canvas' className="absolute border-[1px] border-green-400"></canvas>
     </div>
     </>)
 });
