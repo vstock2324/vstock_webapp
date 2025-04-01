@@ -22,7 +22,7 @@ export const VideoResourcesPanel = observer(() => {
     limit: 100,
     offset: 0,
   })
-  if(error)  throw error;
+  if(error)  throw new Error("Error Occured",error);
       if(!data) return;
       data.forEach((file)=>{
       store.addVideoResource(file.name);

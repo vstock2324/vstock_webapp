@@ -1,11 +1,7 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import React, { useEffect } from "react";
 import { StoreContext } from "../../../../store";
 import { observer } from "mobx-react";
-import { VideoResource } from "../entity/VideoResource";
 import { nanoid } from "nanoid";
 import { createClient } from "@/utils/supabase/client";
 import { AssetResource } from "../entity/AssetResource";
