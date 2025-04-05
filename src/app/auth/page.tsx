@@ -11,7 +11,8 @@ export default function AuthPage() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `http://localhost:3000/auth/callback`,
+        // redirectTo: `http://localhost:3000/auth/callback`,
+        redirectTo:`https://vstockwebapp.vercel.app/auth/callback`,
       },
     });
     if (error) throw new Error("Error occured while signin", error);
