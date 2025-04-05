@@ -16,7 +16,7 @@ const VectorsGrid = async () => {
   return (
     <div className="items-start justify-between flex flex-row relative mx-[120px]">
       <VectorFilters />
-  <VectorGridDataWrapper>
+      <VectorGridDataWrapper>
         {data &&
           data.map((item) => {
             return (

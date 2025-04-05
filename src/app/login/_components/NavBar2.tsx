@@ -1,7 +1,7 @@
 import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TemplatesListItem from "./TemplatesListItem";
+import TemplatesListItem from "@/app/home/_components/TemplatesListItem";
 
 const NavBar2 = () => {
   return (
@@ -12,6 +12,7 @@ const NavBar2 = () => {
             <Link href={"/home"}>
               {" "}
               <Image
+              className=" object-fill"
                 alt="logo"
                 src={"/logo/vstocks2.png"}
                 width={125}
@@ -20,14 +21,14 @@ const NavBar2 = () => {
             </Link>
           </li>
           <li>
-            <Link href={"/home"}>Home</Link>
+            <Link href={"/"}>Home</Link>
           </li>
           <TemplatesListItem />
           <li>
             <Link href={"/"}>My Projects</Link>
           </li>
           <li>
-            <Link href={"/premium"}>Premium</Link>
+            <Link href={"/"}>Premium</Link>
           </li>
           <li>
             <Link

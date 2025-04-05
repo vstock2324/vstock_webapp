@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/home/_components/HomeSearchInput.tsx", "src/app/home/_components/SearchTags.jsx", "src/app/home/vectors/_components/VectorsGrid.jsx", "src/app/home/vectors/_components/VectorCard.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/home/_components/HomeSearchInput.tsx", "src/app/home/_components/SearchTags2.jsx", "src/app/home/vectors/_components/VectorsGrid.jsx", "src/app/home/vectors/_components/VectorCard.jsx", "src/app/home/_components/TemplatesListItem.jsx"],
   "exclude": ["node_modules"]
 }

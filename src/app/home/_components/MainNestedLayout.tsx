@@ -1,5 +1,5 @@
 
-import Footer from "./Footer"
+import Footer from "../../../components/Footer"
 import { memo } from "react";
 import HomeNestedHeader from "./HomeNestedHeader";
 

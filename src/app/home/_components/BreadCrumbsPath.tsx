@@ -22,7 +22,7 @@ const BreadCrumbsPath = () => {
           <React.Fragment key={nanoid()}>
             <BreadcrumbItem className="text-white ">
               <BreadcrumbLink
-                href={`/${item}`}
+                href={`/home/${item}`}
                 className="text-white text-[16px] font-medium hover:text-[#EEEEEE]"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()}

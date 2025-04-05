@@ -10,7 +10,7 @@ const EditOwn = () => {
   <div className=" mt-4 sm:mt-0 mx-auto xl:m-4">
     <div className="flex flex-col lg:flex-row xl:flex-row justify-around items-center p-2 sm:p-5">
       <div className="lg:mb-0">
-        <Image width={425} height={425} src="./images/edi.svg" alt="" className="" />
+        <Image width={425} height={425} src="/images/edi.svg" alt="" className="" />
       </div>
 
       <div className=" sm:mt-1 md:mt-5 lg:mt-4 xl:mt-5">

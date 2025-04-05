@@ -10,8 +10,10 @@ const VectorCard = async ({ card }) => {
     .getPublicUrl(`admin_vectors/${card.name}`);
   return (
     <div>
-      
-      <Link href={"/"} className="flex-shrink flex flex-col items-center justify-start  border hover:border-gray-200  hover:shadow-xl rounded mx-auto">
+      <Link
+        href={"/"}
+        className="flex-shrink flex flex-col items-center justify-start  border hover:border-gray-200  hover:shadow-xl rounded mx-auto"
+      >
         <Image
           className="rounded object-fill cursor-pointer w-auto h-auto"
           loading="lazy"

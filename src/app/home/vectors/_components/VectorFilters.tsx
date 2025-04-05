@@ -149,9 +149,7 @@ const VectorFilters=()=>{
         </div>
         <div className=" flex flex-col w-full gap-2 justify-start px-2 py-3 ">
           <div className="flex items-center">
-            
             <TbFileOrientation size={18}/>
-            
             &nbsp;&nbsp;
             <span className="text-lg font-semibold">Orientation</span>
           </div>

@@ -2,7 +2,7 @@ import { Fragment, memo } from "react";
 import { nanoid } from "nanoid";
 import { createClient } from "@/utils/supabase/server";
 
-const SearchTags = async () => {
+const SearchTags2 = async () => {
   const supabase = await createClient();
   let { data, error } = await supabase.from("tags").select("*").range(0, 4);
   if (error) throw new Error(error.message);
@@ -52,4 +52,4 @@ const SearchTags = async () => {
   );
 };
 
-export default memo(SearchTags);
+export default memo(SearchTags2);
