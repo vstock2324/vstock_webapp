@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'uqmdwdzmfmvegzpietkc.supabase.co',
         port: '',
-        pathname: '/storage/v1/object/public/vstock.bucket.1/**',
+        pathname: `/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/**`,
         search: '',
       },
     ],

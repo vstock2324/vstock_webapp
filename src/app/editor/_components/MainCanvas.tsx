@@ -11,7 +11,7 @@ export const MainCanvas = observer(() => {
   const data = {
     "objects": [
         {
-            "src": "https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/vstock.bucket.1/admin_videos/asset-01.webm",
+            "src": `https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/admin_videos/asset-01.webm`,
             "top": "0",
             "fill": "rgb(0,0,0)",
             "left": "0",
@@ -35,7 +35,7 @@ export const MainCanvas = observer(() => {
             "visible": "true",
             "fillRule": "nonzero",
             "cropWidth": "0",
-            "video_src": "https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/vstock.bucket.1/admin_videos/asset-01.webm",
+            "video_src": `https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/admin_videos/asset-01.webm`,
             "cropHeight": "0",
             "paintFirst": "fill",
             "crossOrigin": "anonymous",
@@ -50,7 +50,7 @@ export const MainCanvas = observer(() => {
             "globalCompositeOperation": "source-over"
         },
         {
-            "src": "https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/vstock.bucket.1/admin_videos/asset-02.webm",
+            "src": `https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/admin_videos/asset-02.webm`,
             "top": "0",
             "fill": "rgb(0,0,0)",
             "left": "0",
@@ -74,7 +74,7 @@ export const MainCanvas = observer(() => {
             "visible": "true",
             "fillRule": "nonzero",
             "cropWidth": "0",
-            "video_src": "https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/vstock.bucket.1/admin_videos/asset-02.webm",
+            "video_src": `https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/admin_videos/asset-02.webm`,
             "cropHeight": "0",
             "paintFirst": "fill",
             "crossOrigin": "anonymous",
@@ -102,7 +102,7 @@ video1El.height = 360;
 video1El.id = 'video1'
 video1El.muted = true;
 video1El.appendChild(video1source);
-video1source.src = 'https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/vstock.bucket.1/admin_videos/asset-01.webm';
+video1source.src = `https://uqmdwdzmfmvegzpietkc.supabase.co/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/admin_videos/asset-01.webm`;
 video1El.onended = () => video1El.play();
 const video1 = new fabric.FabricImage(video1El, {
   left: 200,
