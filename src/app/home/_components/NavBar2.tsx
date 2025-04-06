@@ -2,6 +2,7 @@ import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import TemplatesListItem from "./TemplatesListItem";
+import NavBarLoginButton from "./NavBarLoginButton";
 
 const NavBar2 = () => {
   return (
@@ -29,14 +30,7 @@ const NavBar2 = () => {
           <li>
             <Link href={"/premium"}>Premium</Link>
           </li>
-          <li>
-            <Link
-              className="border border-white dark:border-white rounded-[25px] px-6 py-1"
-              href={"/login"}
-            >
-              Login
-            </Link>
-          </li>
+           <NavBarLoginButton/>
         </ul>
       </nav>
     </div>

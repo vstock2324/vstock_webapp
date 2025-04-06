@@ -13,19 +13,19 @@ const clients = [
     name: "James Pattinson",
     star: 3,
     review: `"Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices."`,
-    picture: "../images/men1.png",
+    picture: "/images/men1.png",
   },
   {
     name: "Greg Stuart",
     star: 5,
     review: `"Vestibulum, cum nam non amet consectetur morbi aenean condimentum eget. Ultricies integer nunc neque accumsan laoreet. Viverra nibh ultrices."`,
-    picture: "../images/men2.png",
+    picture: "/images/men2.png",
   },
   {
     name: "Trevor Mitchell",
     star: 5,
     review: `“Ut tristique viverra sed porttitor senectus. A facilisis metus pretium ut habitant lorem. Velit vel bibendum eget aliquet sem nec, id sed. Tincidunt.”`,
-    picture: "../images/men3.png",
+    picture: "/images/men3.png",
   },
 ];
 

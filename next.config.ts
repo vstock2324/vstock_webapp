@@ -11,6 +11,13 @@ const nextConfig: NextConfig = {
         pathname: `/storage/v1/object/public/${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}/**`,
         search: '',
       },
+      {
+        protocol:"https",
+        hostname:"lh3.googleusercontent.com",
+        port:"",
+        pathname:`/a/**`,
+        search:"",
+      }
     ],
   },
 };

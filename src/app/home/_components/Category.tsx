@@ -23,7 +23,7 @@ const Category = () => {
           <button
             onClick={() => {
               setTab("Vectors");
-              router.push("/home/vectors");
+              router.push(`/home/vectors?page=1`);
             }}
           >
             <div className="cursor-pointer flex flex-col items-center justify-between space-y-[30px]">

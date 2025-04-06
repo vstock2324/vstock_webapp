@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import * as fabric from "fabric";
+import {z} from "zod";
 export type EditorElementBase<T extends string> = {
   readonly id: string;
   readonly type: T;
@@ -37,3 +38,11 @@ export type Placement = {
   scaleX: number;
   scaleY: number;
 };
+
+
+export type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
+export const Pages = z.object({
+  currentPage: z.number(),
+  totalPages: z.number(),
+});
