@@ -14,7 +14,7 @@ const TabButton = ({ newtab }: { newtab: string }) => {
         type="button"
         onClick={() => {
           setTab(newtab);  
-          router.push(`/home/${newtab.toLowerCase()}`);
+          router.push(`/home/${newtab.toLowerCase()}?page=1`);
         }}
         className={`${
           pathname.startsWith(`/home/${newtab.toLowerCase()}`) === true

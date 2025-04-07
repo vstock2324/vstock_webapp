@@ -5,7 +5,7 @@ import LoggedInUser from "./LoggedInUser";
 
 
 
-const NavBarLoginButton = async() => {
+const NavBarLoginButton2 = async() => {
     const supabase=await createClient();
     const { data:{user} } = await supabase.auth.getUser();
   return (
@@ -21,4 +21,4 @@ const NavBarLoginButton = async() => {
   );
 };
 
-export default memo(NavBarLoginButton);
+export default memo(NavBarLoginButton2);

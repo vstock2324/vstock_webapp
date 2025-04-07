@@ -21,7 +21,7 @@ const HomeSearchInput = () => {
       setIsSearching(true);
       const { data, error } = await supabase.storage
         .from(`${process.env.NEXT_PUBLIC_SUPABASE_BUCKET_NAME}`)
-        .list("admin_vectors", {
+        .list(`${process.env.NEXT_PUBLIC_SUPABASE_STORAGE_VECTORS_FOLDER}`, {
           limit: 100,
           offset: 0,
           sortBy: { column: "name", order: "asc" },
@@ -77,7 +77,7 @@ const HomeSearchInput = () => {
                 return (
                   <div className="p-1" key={nanoid()}>
                     <Link
-                      href={"/"}
+                      href={`/home/vectors?id=${item.id}`}
                       className="flex items-center justify-between w-full cursor-pointer hover:bg-gray-200 p-1 px-2"
                     >
                       <span className="">{item.name}</span>

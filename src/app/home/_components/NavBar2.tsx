@@ -2,7 +2,7 @@ import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import TemplatesListItem from "./TemplatesListItem";
-import NavBarLoginButton from "./NavBarLoginButton";
+import NavBarLoginButton2 from "./NavBarLoginButton2";
 
 const NavBar2 = () => {
   return (
@@ -30,7 +30,7 @@ const NavBar2 = () => {
           <li>
             <Link href={"/premium"}>Premium</Link>
           </li>
-           <NavBarLoginButton/>
+           <NavBarLoginButton2/>
         </ul>
       </nav>
     </div>

@@ -22,10 +22,12 @@ const BreadCrumbsPath = () => {
           <React.Fragment key={nanoid()}>
             <BreadcrumbItem className="text-white ">
               <BreadcrumbLink
-                href={`/home/${item}`}
+                // href={`/home/${item}`}
                 className="text-white text-[16px] font-medium hover:text-[#EEEEEE]"
               >
-                {item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()}
+                {item.search("%20") === -1
+                  ? item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()
+                  : item.replace("%20", " ")}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator className="text-white" />
@@ -34,8 +36,10 @@ const BreadCrumbsPath = () => {
       })}
       <BreadcrumbItem className="text-white">
         <BreadcrumbPage className="text-white text-[16px] font-medium hover:text-[#EEEEEE]">
-          {nestedpath[nestedpath.length - 1].charAt(0).toUpperCase() +
-            nestedpath[nestedpath.length - 1].slice(1).toLowerCase()}
+          {nestedpath[nestedpath.length - 1].search("%20")===-1 ? (
+            nestedpath[nestedpath.length - 1].charAt(0).toUpperCase() +
+            nestedpath[nestedpath.length - 1].slice(1).toLowerCase()
+          ): nestedpath[nestedpath.length - 1].replace("%20"," ")}
         </BreadcrumbPage>
       </BreadcrumbItem>
     </div>

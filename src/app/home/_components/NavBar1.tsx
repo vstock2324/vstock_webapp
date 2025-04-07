@@ -2,13 +2,15 @@ import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IoReorderThree } from "react-icons/io5";
+import NavBarLoginButton1 from "./NavBarLoginButton1";
 
 const NavBar1 = () => {
   return (
-    <div className="flex flex-row items-center justify-center">
-      <nav className="lg:hidden flex flex-row items-center justify-center  min-w-[400px] w-full">
+    <div className="flex flex-row items-center justify-center w-full lg:hidden">
+      <nav className="flex flex-row items-center justify-center w-full">
         <ul className="list-none text-[20px] text-white flex flex-row justify-between items-center w-full ">
-          <li className="flex flex-col items-start justify-start pb-2">
+          <li className="flex flex-row items-start justify-between pb-2 gap-x-3">
+            <IoReorderThree fill="white" className="cursor-pointer" size={45} />
             <Link href={"/home"}>
               {" "}
               <Image
@@ -19,11 +21,10 @@ const NavBar1 = () => {
               />
             </Link>
           </li>
-          <li>
-            <IoReorderThree className="cursor-pointer" size={36} />
-          </li>
+          <NavBarLoginButton1 />
         </ul>
       </nav>
+
     </div>
   );
 };

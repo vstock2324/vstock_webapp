@@ -6,7 +6,7 @@ import NavBar1 from "./NavBar1";
 const Header = () => {
   return (
     <>
-      <div className={`bg-[#2E67DD] shadow-headershadow `}>
+      <div className={`bg-[#2E67DD] relative`}>
         <header className="mx-[50px] pt-[30px] lg:mx-[120px] lg:pt-[60px]">
           <NavBar1/>
           <NavBar2/>

@@ -30,7 +30,9 @@ const LoggedInUser = ({
         />
         {open ? (
           <div className="absolute w-[120px] h-[120px] bg-white border rounded-md -left-[140%] top-[110%]">
-            <div className="flex w-full flex-row items-center justify-end cursor-pointer rounded-full px-1"><MdClose onClick={()=>setOpen(!open)} fill="black" size={20}/></div>
+            <div className="flex w-full flex-row items-center justify-end cursor-pointer rounded-full px-1">
+              <MdClose onClick={() => setOpen(!open)} fill="black" size={20} />
+            </div>
             <form
               action={signout}
               className="m-1 p-1 flex flex-col items-start justify-start"

@@ -2,15 +2,15 @@ import { Fragment, memo } from "react";
 import { nanoid } from "nanoid";
 import { createClient } from "@/utils/supabase/server";
 
-const SearchNestedTags = async () => {
+const SearchNestedTags1 = async () => {
   const supabase = await createClient();
-  let { data, error } = await supabase.from("tags").select("*").range(0, 4);
+  let { data, error } = await supabase.from("tags").select("*").range(0, 2);
   if (error) throw new Error(error.message);
 
   return (
     <>
-      <div className="lg:pb-10">
-        <div className="hidden lg:flex lg:flex-row items-center justify-center  gap-x-[18px]">
+      <div className="pb-2 lg:hidden">
+        <div className="flex flex-row items-center justify-center gap-x-4">
           {data.map((item) => {
             return (
               <Fragment key={nanoid()}>
@@ -52,4 +52,4 @@ const SearchNestedTags = async () => {
   );
 };
 
-export default memo(SearchNestedTags);
+export default memo(SearchNestedTags1);

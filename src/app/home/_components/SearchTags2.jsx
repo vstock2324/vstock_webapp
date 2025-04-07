@@ -9,8 +9,8 @@ const SearchTags2 = async () => {
 
   return (
     <>
-      <div className="lg:pb-10">
-        <div className="hidden lg:flex lg:flex-row items-center justify-center  gap-x-[18px]">
+      <div className="hidden lg:flex lg:pb-10">
+        <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-x-[18px]">
           {data.map((item) => {
             return (
               <Fragment key={nanoid()}>

@@ -1,19 +1,19 @@
-import {
-  Breadcrumb,
-   BreadcrumbList
-  } from "@/components/ui/breadcrumb"
-import { memo } from "react"
+import { Breadcrumb, BreadcrumbList } from "@/components/ui/breadcrumb";
+import { memo } from "react";
 import BreadCrumbsPath from "./BreadCrumbsPath";
 
-const BeardCrumbsHomeNested=()=>{
+const BeardCrumbsHomeNested = () => {
   return (
-    <Breadcrumb>
-      <BreadcrumbList>
-       <BreadCrumbsPath/>
-      </BreadcrumbList>
-    </Breadcrumb>
-  )
-}
-
+    <>
+    <div className="hidden lg:flex w-full">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadCrumbsPath />
+        </BreadcrumbList>
+      </Breadcrumb>
+      </div>
+    </>
+  );
+};
 
 export default memo(BeardCrumbsHomeNested);

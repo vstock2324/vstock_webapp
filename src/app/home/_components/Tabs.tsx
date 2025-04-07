@@ -4,7 +4,7 @@ import TabButton from "./TabButton";
 const Tabs = () => {
   return (
     <>
-      <div className="flex mx-20 py-[50px] flex-col gap-y-5  md:gap-y-0 md:gap-x-10 md:flex-row  justify-center items-center">
+      <div className="flex flex-col mx-20 py-[50px]  gap-y-2  lg:gap-y-0 lg:gap-x-10 lg:flex-row  justify-center items-center">
         <TabButton newtab={"Vectors"} />
         <TabButton newtab={"Animations"} />
         <TabButton newtab={"Posters"} />
